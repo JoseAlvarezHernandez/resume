@@ -1,0 +1,40 @@
+@import 'color.scss';
+
+body {
+  background-color: $gray;
+}
+
+.intro-text{
+  color: $white;
+  
+  strong {
+    color: $yellow;
+  }
+
+  strong:nth-child(2) {
+    color: $lightWhite;
+  }
+}
+
+.section-heading{
+  h2 {
+    position: relative;
+    font-weight: 200;
+    color: $white;
+
+    strong {
+      font-weight: 800;
+    }
+  }
+}
+
+.Presentation{
+  &-ImageContainer{
+    padding-top: 1.5em;
+  }
+  &-Image{
+    width: 200px;
+    border-color: $lightWhite !important;
+    background-color: $yellow;
+  }
+}
