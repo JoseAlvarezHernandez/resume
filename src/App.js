@@ -10,6 +10,10 @@ import 'bootstrap/dist/js/bootstrap.bundle'
 
 import Home from './page/home.component'
 
+import ContextMenuListener from './ContextMenu'
+
+document.addEventListener('contextmenu', ContextMenuListener)
+
 function App() {
   return <Home />;
 }

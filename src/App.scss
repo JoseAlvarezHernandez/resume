@@ -1,18 +1,26 @@
 @import 'color.scss';
 
 body {
-  background-color: $gray;
+  background-color: $dark;
+}
+
+hr {
+  background-color: $lightWhite;
 }
 
 .intro-text{
   color: $white;
+  height: 100vh;
   
   strong {
-    color: $yellow;
+    color: $white;
   }
 
-  strong:nth-child(2) {
-    color: $lightWhite;
+  strong:nth-child(1) {
+    color: $yellow;
+    font-weight: 800;
+    text-decoration: underline;
+    //background-color: $black;
   }
 }
 
@@ -29,12 +37,9 @@ body {
 }
 
 .Presentation{
-  &-ImageContainer{
-    padding-top: 1.5em;
-  }
-  &-Image{
-    width: 200px;
-    border-color: $lightWhite !important;
-    background-color: $yellow;
+  &-Container {
+    //-webkit-filter: grayscale(10%);
+    height: 100vh;
+    
   }
 }
