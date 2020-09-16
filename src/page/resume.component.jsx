@@ -7,6 +7,29 @@ import './../styles/resume.scss'
 export default class MyResume extends Component{
     education = [
         { 
+            from: '09/2012'
+            , to: '08/2014'
+            , company: 'Universidad Tecnologica de Xicotepec de Juarez'
+            , title : 'T.S.U TIC'
+            , description: ''
+        }
+    ]
+    experience = [
+        { 
+            from: '02/2015'
+            , to: '05/2016'
+            , company: 'Broxel Fintech'
+            , title : 'Fullstack Developer'
+            , description: 'I was in charge of making'
+        }
+        , { 
+            from: '02/2015'
+            , to: '05/2016'
+            , company: 'Telefonica Movistar'
+            , title : 'Fullstack Developer'
+            , description: 'I was in charge of making'
+        }
+        , { 
             from: '02/2015'
             , to: '05/2016'
             , company: 'Hala Ken Consulting'
@@ -25,7 +48,7 @@ export default class MyResume extends Component{
                             </div>
                         </div>
                         <ResumeSection title="Education" items={this.education} />
-                        <ResumeSection title="Experience" items={this.education} />
+                        <ResumeSection title="Experience" items={this.experience} />
                     </div>
                 </div>
             </section>
