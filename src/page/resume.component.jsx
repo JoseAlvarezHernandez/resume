@@ -1,8 +1,9 @@
+import './../styles/resume.scss'
 import React, { Component } from 'react'
 
-import ResumeSection from './resumeSection.component'
-
-import './../styles/resume.scss'
+import ResumeSection from './section.component'
+import { Container } from 'react-bootstrap'
+import ResumeItem from './resumeItem.component'
 
 const education = require( './../education.json')
 const experience = require('./../experience.json')
@@ -10,19 +11,18 @@ const experience = require('./../experience.json')
 export default class MyResume extends Component{
     render(){
         return (
-            <section className="site-section " id="section-resume">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12 mb-5">
-                            <div className="section-heading text-center">
-                                <h2>My <strong>Resume</strong></h2>
-                            </div>
-                        </div>
-                        <ResumeSection title="Education" items={education} />
-                        <ResumeSection title="Experience" items={experience} />
-                    </div>
-                </div>
-            </section>
+            <div>
+                <ResumeSection id="resume" name="Experience">
+                    <Container>
+                        {experience.map((item, key) => <ResumeItem {...item} key={key}/>)}
+                    </Container>
+                </ResumeSection>
+                <ResumeSection id="education" name="Education">
+                    <Container>
+                        {education.map((item, key) => <ResumeItem {...item} key={key}/>)}
+                    </Container>
+                </ResumeSection>
+            </div>
         )
     }
 }

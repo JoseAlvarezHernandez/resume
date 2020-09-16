@@ -21,7 +21,6 @@ hr {
     color: $yellow;
     font-weight: 800;
     text-decoration: underline;
-    //background-color: $black;
   }
 }
 
@@ -46,5 +45,36 @@ hr {
         font-size: $text-small;
       }
     }
+  }
+}
+
+.AboutMe {
+  &-PictureContainer{
+    filter: grayscale(90%);
+  }
+
+  &-Picture {
+    height: 400px;
+  }
+
+  h2 {
+    color: $white;
+  }
+
+  p {
+    font-weight: 200;
+    line-height: 2;
+    color: $lightGray;
+  }
+}
+
+
+.hireMe {
+  background-color: $yellow;
+  border-color: $yellow;
+
+  &:hover, &:focus, &:active, &:focus-within, &:visited, &::after, &::selection{
+    background-color: $darkYellow;
+    border-color: $white;
   }
 }
