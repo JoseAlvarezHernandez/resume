@@ -1,0 +1,16 @@
+[
+    { 
+        "from": "09/2012"
+        , "to": "08/2014"
+        , "company": "Universidad Tecnologica de Xicotepec de Juarez"
+        , "title" : "T.S.U TIC"
+        , "description": ""
+    },
+    { 
+        "from": "09/2005"
+        , "to": "05/2008"
+        , "company": "Vero Beach High School"
+        , "title" : "High School"
+        , "description": ""
+    }
+]

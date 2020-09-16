@@ -1,12 +1,10 @@
 import React, { Component } from 'react'
-import { Image } from 'react-bootstrap'
 
 import './../styles/stars.css'
 export default class Presentation extends Component{
     render(){
         return (
-            <section className="stars Presentation-Container">
-                
+            <section className="stars Presentation-Container mb-5">
                 <h2 id="title">
                     Hello, I'm <br/><span>Jose Alvarez</span>
                     <p>A software developer mainly focus on Front End.</p>
