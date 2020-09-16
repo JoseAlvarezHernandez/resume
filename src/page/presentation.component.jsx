@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Image } from 'react-bootstrap'
 
-import './../stars.css'
+import './../styles/stars.css'
 export default class Presentation extends Component{
     render(){
         return (
@@ -9,7 +9,7 @@ export default class Presentation extends Component{
                 
                 <h2 id="title">
                     Hello, I'm <br/><span>Jose Alvarez</span>
-                    <h6>A software developer mainly focus on Front End.</h6>
+                    <p>A software developer mainly focus on Front End.</p>
                 </h2>
                 <div id="stars"></div>
                 <div id="stars2"></div>

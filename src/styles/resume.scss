@@ -1,0 +1,34 @@
+@import 'color.scss';
+@import 'font-size.scss';
+
+.resume {
+    &-item {
+        padding: 30px;
+        background: $gray;
+        -webkit-transition: .3s all ease;
+        -o-transition: .3s all ease;
+        transition: .3s all ease;
+        border: 4px solid transparent;
+        border-radius: 7px;
+
+        p {
+            color: $lightGray;
+        }
+
+        h3{
+            color: $yellow;
+            font-size: $text-medium;
+        }
+
+        .date{
+            display: block;
+            margin-bottom: 10px;
+            font-size: $text-extraSmall;
+            font-weight: 700;
+            color: $white;
+        }
+        .school{
+            color: rgba(255, 255, 255, 0.3);
+        }
+    }
+}

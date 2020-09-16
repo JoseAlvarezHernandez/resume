@@ -1,11 +1,12 @@
 @import 'color.scss';
+@import 'font-size.scss';
 
 body {
-  background-color: $dark;
+  background-color: $darkGray;
 }
 
 hr {
-  background-color: $lightWhite;
+  background-color: $lightGray;
 }
 
 .intro-text{
@@ -36,10 +37,14 @@ hr {
   }
 }
 
-.Presentation{
+.Presentation {
   &-Container {
-    //-webkit-filter: grayscale(10%);
     height: 100vh;
-    
+
+    h2 {
+      p {
+        font-size: $text-small;
+      }
+    }
   }
 }
